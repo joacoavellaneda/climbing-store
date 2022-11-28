@@ -1,0 +1,31 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Marca</th>
+      <th>Precio</th>
+      <th>Color</th>
+      <th>Stock</th>
+      <th>Cantidad/th>
+
+
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let helmet of helmets" [ngClass]="{'clearance': helmet.clearance}">
+      <td><img [src]="helmet.img" [alt]="helmet.name" class="w-50 p-1"></td>
+      <td>{{helmet.name}}</td>
+      <td>{{helmet.brand}}</td>
+      <td>{{helmet.price  | currency }}</td>
+      <td>{{helmet.color}}</td>
+      <td ><span *ngIf="helmet.stock==0" class="badge badge-danger">SIN STOCK</span></td>
+      <td>
+        <app-input-integer [(quantity)]="helmet.quantity" [max]="helmet.stock" *ngIf="helmet.stock" (maxReached)="maxReached($event)"></app-input-integer>
+    </td>
+
+    </tr>
+  </tbody>
+</table>
+
+
