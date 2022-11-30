@@ -1,3 +1,31 @@
+.textimages img {
+  box-shadow: 0.438em 0.813em 2.313em rgb(0, 0, 0);
+  border-radius: 5%;
+}
+.imghelmet {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.imghelmet img {
+  height: 12.625em;
+  width: 15.625em;
+  margin: 5% 0;
+}
+
+
+.textimages {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 .clearance{
   background: lightgreen;
 }
+td{
+  vertical-align: middle;
+}
+
+

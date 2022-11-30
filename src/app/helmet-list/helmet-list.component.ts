@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { helmet } from './helmet';
+import { Helmet } from './helmet';
 
 @Component({
   selector: 'app-helmet-list',
@@ -7,7 +7,7 @@ import { helmet } from './helmet';
   styleUrls: ['./helmet-list.component.scss']
 })
 export class HelmetListComponent {
- helmets: helmet []=[
+ helmets: Helmet []=[
   {
     img: "assets/img/petzl_boreo_rojo.jpeg",
     name: "Casco Petz Boreo",
@@ -16,18 +16,20 @@ export class HelmetListComponent {
     color: "rojo",
     stock: 5,
     clearance: false,
-    quantity:0,
+    quantity: 0,
+
 
 },
 {
-  img: "assets/img/petzl_boreo_rojo.jpeg",
+  img: "assets/img/edelrid_zodiac.jpg",
   name: "Casco Edelrid Zodiac",
   brand: "Edelrid",
   price: 1900,
   color: "blanco",
   stock: 0,
   clearance: false,
-  quantity:0,
+  quantity: 0,
+
 
 
 },
@@ -39,9 +41,19 @@ export class HelmetListComponent {
   color: "negro y azul",
   stock: 7,
   clearance: true,
-  quantity:0,
+  quantity: 0,
+
+},
+ ];
+
+constructor(){}
 
 
+maxReached(m: string){
+  alert(m);
 }
- ]
+
+
+
+
 }

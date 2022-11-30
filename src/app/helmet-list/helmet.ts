@@ -1,4 +1,4 @@
-export interface helmet{
+export interface Helmet{
        name: string;
        brand: string;
        price: number;
@@ -7,5 +7,7 @@ export interface helmet{
        img:string;
        clearance:boolean;
        quantity: number;
+
+
 
 }
