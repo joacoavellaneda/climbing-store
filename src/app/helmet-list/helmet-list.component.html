@@ -25,7 +25,9 @@
 
       <td>
         <app-input-integer [(quantity)] = "helmet.quantity" [max]="helmet.stock" *ngIf="helmet.stock" (maxReached)="maxReached($event)"></app-input-integer>
+
       </td>
+      <td><button class="bn632-hover bn20" (click)="addToCart(helmet)">Comprar</button></td>
 
 
 

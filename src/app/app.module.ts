@@ -15,6 +15,7 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
     CartComponent,
     ClimbingHelmetsComponent,
     InputIntegerComponent,
+
   ],
   imports: [
     BrowserModule,

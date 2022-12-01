@@ -1,1 +1,12 @@
-<p>cart works!</p>
+
+<div class="card">
+  <p>CARRITO:</p>
+  <ul class="link-light" >
+    <li *ngFor="let helmet of (cartList$ | async)">
+      {{helmet.name}}: {{helmet.quantity}}
+    </li>
+  </ul>
+
+</div>
+
+
