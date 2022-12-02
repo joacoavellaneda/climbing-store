@@ -1,20 +1,20 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule} from '@angular/router';
 import { ClimbingAboutComponent } from "./climbing-about/climbing-about.component";
-import { ClimbingHelmetsComponent } from "./climbing-helmets/climbing-helmets.component";
+import { ClimbingproductsComponent } from "./climbing-products/climbing-products.component";
 
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'helmets',
+    redirectTo: 'products',
     pathMatch: 'full'
 
   },
   {
-    path: 'helmets',
-    component: ClimbingHelmetsComponent
+    path: 'products',
+    component: ClimbingproductsComponent
 
   },
   {

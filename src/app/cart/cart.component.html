@@ -2,10 +2,18 @@
 <div class="card">
   <p>CARRITO:</p>
   <ul class="link-light" >
-    <li *ngFor="let helmet of (cartList$ | async)">
-      {{helmet.name}}: {{helmet.quantity}}
+    <li *ngFor="let product of (cartList$ | async)">
+
+      <div class="col-3">
+        <a>{{product.name}}: {{product.quantity}}</a>
+      </div>
+      <div class="col-3">
+        <a type="button" class="btn btn-danger sm"
+          style="text-decoration:none;" (click)="deleteToCart(product)">X</a>
+      </div>
     </li>
   </ul>
+
 
 </div>
 

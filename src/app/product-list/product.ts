@@ -1,6 +1,7 @@
-export interface Helmet{
+export interface Product{
        name: string;
        brand: string;
+       category: string;
        price: number;
        color: string;
        stock: number;

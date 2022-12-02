@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Helmet } from '../helmet-list/helmet';
+import { Product } from '../product-list/product';
 
 @Component({
   selector: 'app-input-integer',
